@@ -1,17 +1,25 @@
 package com.narxoz.rpg.equipment;
-
-/**
- * Interface for all weapon types in the game.
- *
- * Abstract Factory Pattern:
- * This is one of the "Product" interfaces in an Abstract Factory.
- * Each equipment theme (Medieval, Magic, Ranger) will have its own concrete weapon.
- *
- * TODO: Define what all weapons have in common
- * Think: What information should every weapon provide?
- * Examples: damage, weapon type, special properties, etc.
- */
 public interface Weapon {
+    int getDamage();
+    String getName();
+    String getType();
+    String getSpecialEffect();
+//Можно потом добавить типа историю оружия или и т.д
+
+
+
+
+    /**
+     * Interface for all weapon types in the game.
+     *
+     * Abstract Factory Pattern:
+     * This is one of the "Product" interfaces in an Abstract Factory.
+     * Each equipment theme (Medieval, Magic, Ranger) will have its own concrete weapon.
+     *
+     * TODO: Define what all weapons have in common
+     * Think: What information should every weapon provide?
+     * Examples: damage, weapon type, special properties, etc.
+     */
 
     // TODO: Add weapon behavior methods
     // Consider:
