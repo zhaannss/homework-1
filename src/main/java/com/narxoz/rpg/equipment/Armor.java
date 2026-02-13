@@ -4,10 +4,7 @@ public interface Armor {
     String getArmorInfo();
     String getArmorType();
 
-
-
-
-/**
+    /**
  * Interface for all armor types in the game.
  *
  * Abstract Factory Pattern:
