@@ -1,5 +1,41 @@
 package com.narxoz.rpg.equipment;
+public class IronSword implements Weapon {
+    private int damage;
+    private String name;
+    private String type;
+    private String specialEffect;
 
+    public IronSword() {
+        this.damage = 30 ;
+        this.name = "Iron Sword";
+        this.type = "Sword";
+        this.specialEffect = "When the sword is filled with mana, a shell appears around it that increases the weapon's stats.";
+    }
+
+    @Override
+    public int getDamage() {
+        return damage;
+    }
+    @Override
+    public String getName() {
+        return name;
+    }
+    @Override
+    public String getType() {
+        return type;
+    }
+    @Override
+    public String getWeaponInfo() {
+        return name +
+                " (Type: " + type +
+                ", Damage: " + damage +
+                ", Effect: " + specialEffect + ")";
+    }
+    @Override
+    public String getSpecialEffect() {
+        return specialEffect;
+    }
+}
 /**
  * Example concrete weapon implementation - Medieval theme.
  *
@@ -23,33 +59,11 @@ package com.narxoz.rpg.equipment;
  * - LeatherArmor (Ranger theme)
  * - Other armor you imagine...
  */
-public class IronSword implements Weapon {
-
-    private int damage;
-    private String weaponType;
-
-    public IronSword() {
-        this.damage = 25;
-        this.weaponType = "Sword";
-    }
-
     // TODO: Implement methods from Weapon interface
     // Define those methods in the Weapon interface first!
 
     // Example method structure:
-    public int getDamage() {
-        return damage;
-    }
 
-    public String getWeaponInfo() {
-        return "Iron Sword (Medieval) - A sturdy blade forged from iron";
-    }
-
-    public void displayInfo() {
-        System.out.println("Weapon: " + getWeaponInfo());
-        System.out.println("Damage: " + damage);
-        System.out.println("Type: " + weaponType);
-    }
 
     // TODO: Consider adding theme-specific properties
     // For example, Medieval weapons might have:
@@ -58,4 +72,3 @@ public class IronSword implements Weapon {
     // Magic weapons might have:
     // - Mana boost
     // - Spell power
-}

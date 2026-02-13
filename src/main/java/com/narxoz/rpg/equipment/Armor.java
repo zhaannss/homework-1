@@ -1,6 +1,10 @@
 package com.narxoz.rpg.equipment;
+public interface Armor {
+    int getDefense();
+    String getArmorInfo();
+    String getArmorType();
 
-/**
+    /**
  * Interface for all armor types in the game.
  *
  * Abstract Factory Pattern:
@@ -11,8 +15,6 @@ package com.narxoz.rpg.equipment;
  * Think: What information should every armor provide?
  * Examples: defense, armor type, special properties, etc.
  */
-public interface Armor {
-
     // TODO: Add armor behavior methods
     // Consider:
     // - int getDefense()
