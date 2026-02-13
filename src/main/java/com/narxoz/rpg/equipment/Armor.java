@@ -18,7 +18,6 @@ public interface Armor {
  * Think: What information should every armor provide?
  * Examples: defense, armor type, special properties, etc.
  */
-
     // TODO: Add armor behavior methods
     // Consider:
     // - int getDefense()
