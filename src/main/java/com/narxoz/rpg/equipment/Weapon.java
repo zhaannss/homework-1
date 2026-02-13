@@ -4,7 +4,7 @@ public interface Weapon {
     String getName();
     String getType();
     String getSpecialEffect();
-//Можно потом добавить типа историю оружия или и т.д
+    //Можно потом добавить типа историю оружия или и т.д
 
 
 
