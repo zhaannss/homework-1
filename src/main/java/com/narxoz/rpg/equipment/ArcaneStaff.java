@@ -9,7 +9,7 @@ public class ArcaneStaff implements Weapon {
         this.damage = 35;
         this.name = "Arcane Staff";
         this.type = "Staff";
-        this.specialEffect = "";
+        this.specialEffect = "Can fill itself with natural mana";
     }
     @Override
     public int getDamage() {

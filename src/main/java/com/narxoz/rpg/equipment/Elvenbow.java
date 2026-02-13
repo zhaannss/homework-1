@@ -9,7 +9,7 @@ public class Elvenbow implements Weapon {
         this.damage = 20;
         this.name = "Elven Bow";
         this.type = "Bow";
-        this.specialEffect = "";
+        this.specialEffect = "Tracks down an enemy using their mana";
     }
     @Override
     public int getDamage() {

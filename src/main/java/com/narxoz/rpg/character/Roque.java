@@ -2,15 +2,15 @@ package com.narxoz.rpg.character;
 public class Roque extends BaseCh {
     public Roque (String name, String race, int age, String gender) {
         super(name, race, age, gender);
-        this.health = 0;
-        this.mana = 0;
-        this.strength = 0;
-        this.intelligence = 0;
-        this.agility = 0;
+        this.health = 90;
+        this.mana = 55;
+        this.strength = 80;
+        this.intelligence = 110;
+        this.agility = 120;
     }
     @Override
     public void useSpecialAbility() {
-        System.out.println(name + " ");
+        System.out.println(name + " uses instant step and super stealth mode!");
     }
 
 }

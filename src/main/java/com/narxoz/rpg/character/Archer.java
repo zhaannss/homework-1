@@ -2,15 +2,15 @@ package com.narxoz.rpg.character;
 public class Archer extends BaseCh {
     public Archer (String name, String race, int age, String gender) {
         super(name, race, age, gender);
-        this.health = 0;
-        this.mana = 0;
-        this.strength = 0;
-        this.intelligence = 0;
-        this.agility = 0;
+        this.health = 100;
+        this.mana = 80;
+        this.strength = 90;
+        this.intelligence = 85;
+        this.agility = 96;
     }
     @Override
     public void useSpecialAbility() {
-        System.out.println(name + " ");
+        System.out.println(name + " uses Precision Shot! ");
     }
 
 }

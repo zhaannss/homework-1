@@ -2,15 +2,15 @@ package com.narxoz.rpg.character;
 public class Warrior extends BaseCh {
     public Warrior(String name, String race, int age, String gender) {
         super(name, race, age, gender);
-        this.health = 0; //надо расписать характеристки для всех персов и потом придумать спешл абилити
-        this.mana = 0;
-        this.strength = 0;
-        this.intelligence = 0;
-        this.agility = 0;
+        this.health = 200; //надо расписать характеристки для всех персов и потом придумать спешл абилити
+        this.mana = 40;
+        this.strength = 120;
+        this.intelligence = 70;
+        this.agility = 60;
     }
     @Override
     public void useSpecialAbility() {
-        System.out.println(name + " ");
+        System.out.println(name + "uses Berserk! Strength increased temporarily!");
     }
 
 // Example concrete implementation of a Character.

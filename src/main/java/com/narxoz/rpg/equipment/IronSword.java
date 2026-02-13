@@ -9,7 +9,7 @@ public class IronSword implements Weapon {
         this.damage = 30 ;
         this.name = "Iron Sword";
         this.type = "Sword";
-        this.specialEffect = "";
+        this.specialEffect = "When the sword is filled with mana, a shell appears around it that increases the weapon's stats.";
     }
 
     @Override

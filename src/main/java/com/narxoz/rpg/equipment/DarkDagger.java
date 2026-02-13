@@ -9,7 +9,7 @@ public class DarkDagger implements Weapon {
         this.damage = 15;
         this.name = "DarkDagger";
         this.type = "Dagger";
-        this.specialEffect = "";
+        this.specialEffect = " When used, it can leave a mark on the enemy that will consume his HP.";
     }
     @Override
     public int getDamage() {

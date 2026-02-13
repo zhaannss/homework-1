@@ -9,7 +9,7 @@ public class HolyWand implements Weapon {
         this.damage = 20;
         this.name = "HolyWand";
         this.type = "Wand";
-        this.specialEffect = "";
+        this.specialEffect = "When healing, it also gives a buff to the heroes' abilities.";
     }
     @Override
     public int getDamage() {
