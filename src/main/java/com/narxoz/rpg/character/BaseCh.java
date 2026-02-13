@@ -44,17 +44,29 @@ public abstract class BaseCh implements Character {
     @Override
     public void equipWeapon(Weapon weapon) {
         this.weapon = weapon;
-        System.out.println(name + " equipped " + weapon);
+        System.out.println(name + " equipped "
+                + weapon.getWeaponInfo());
     }
+
     @Override
     public void equipArmor(Armor armor) {
         this.armor = armor;
-        System.out.println(name + " equipped " + armor);
+        System.out.println(name + " equipped "
+                + armor.getArmorInfo()
+                + " (Defense: " + armor.getDefense() + ")");
     }
+
     @Override
     public void displayEquipment() {
-        System.out.println("Weapon: " + (weapon != null ? weapon : "None"));
-        System.out.println("Armor: " + (armor != null ? armor : "None"));
+        System.out.println("Weapon: "
+                + (weapon != null
+                ? weapon.getWeaponInfo()
+                : "None"));
+
+        System.out.println("Armor: "
+                + (armor != null
+                ? armor.getArmorInfo() + " (Defense: " + armor.getDefense() + ")"
+                : "None"));
     }
     @Override
     public void displayStats() {
@@ -64,7 +76,6 @@ public abstract class BaseCh implements Character {
     }
     //Special
     @Override
-    public abstract void useSpecialAbility();{
-    }
+    public abstract void useSpecialAbility();
 
 }

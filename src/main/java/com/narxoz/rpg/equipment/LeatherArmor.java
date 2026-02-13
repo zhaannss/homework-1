@@ -3,7 +3,7 @@ public class LeatherArmor implements Armor {
 
     @Override
     public int getDefense() {
-        return 5; // лёгкая защита
+        return 50; // лёгкая защита
     }
     @Override
     public String getArmorInfo() {

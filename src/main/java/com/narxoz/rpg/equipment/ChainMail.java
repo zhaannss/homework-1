@@ -3,7 +3,7 @@ public class ChainMail implements Armor {
 
     @Override
     public int getDefense() {
-        return 10; // средняя защита
+        return 40; // средняя защита
     }
     @Override
     public String getArmorInfo() {

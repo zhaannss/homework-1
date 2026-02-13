@@ -25,6 +25,13 @@ public class IronSword implements Weapon {
         return type;
     }
     @Override
+    public String getWeaponInfo() {
+        return name +
+                " (Type: " + type +
+                ", Damage: " + damage +
+                ", Effect: " + specialEffect + ")";
+    }
+    @Override
     public String getSpecialEffect() {
         return specialEffect;
     }

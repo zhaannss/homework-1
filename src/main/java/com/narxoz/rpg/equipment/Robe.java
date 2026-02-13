@@ -3,7 +3,7 @@ public class Robe implements Armor {
 
     @Override
     public int getDefense() {
-        return 3;     }
+        return 35;     }
     @Override
     public String getArmorInfo() {
         return "Mage Robe: Enchanted robe that enhances magical abilities " +

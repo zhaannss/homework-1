@@ -1,23 +1,52 @@
 package com.narxoz.rpg;
+import com.narxoz.rpg.*;
+import com.narxoz.rpg.factory.character.*;
+import com.narxoz.rpg.factory.equipment.*;
+import com.narxoz.rpg.character.Character;
+import com.narxoz.rpg.factory.character.CharacterFactory;
+import com.narxoz.rpg.factory.character.WarriorFactory;
 
-/**
- * Main demonstration class for the RPG Character & Equipment System.
- *
- * Your task: Demonstrate both Factory Method and Abstract Factory patterns working together.
- *
- * This file should showcase:
- * 1. Creating different character types using Factory Method pattern
- * 2. Equipping characters with themed equipment using Abstract Factory pattern
- * 3. Displaying character stats and equipment details
- *
- * Expected output flow:
- * - Create 3+ different characters
- * - Equip each with different themed equipment sets
- * - Show that the system is extensible and maintainable
- */
 public class Main {
     public static void main(String[] args) {
         System.out.println("=== RPG Character & Equipment System ===\n");
+
+        CharacterFactory warriorFactory = new WarriorFactory();
+        Character warrior = warriorFactory.createCharacter("Leon", "Human", 26, "Male");
+        EquipmentFactory medievalFactory = new MedievalEquipmentFactory();
+        warrior.equipWeapon(medievalFactory.createWeapon());
+        warrior.equipArmor(medievalFactory.createArmor());
+        System.out.println("Creating Warrior...");
+        warrior.displayStats();
+        warrior.useSpecialAbility();
+        warrior.displayEquipment();
+        System.out.println("\n-----------------------------\n");
+
+        CharacterFactory mageFactory = new MageFactory();
+        Character mage = mageFactory.createCharacter("Galadriel", "Elf", 95, "Female"); //властелин кооллец
+        EquipmentFactory magicFactory = new MagicEquipmentFactory();
+        mage.equipWeapon(magicFactory.createWeapon());
+        mage.equipArmor(magicFactory.createArmor());
+        System.out.println("Creating Mage...");
+        mage.displayStats();
+        mage.useSpecialAbility();
+        mage.displayEquipment();
+        System.out.println("\n-----------------------------\n");
+
+        /**
+         * Main demonstration class for the RPG Character & Equipment System.
+         *
+         * Your task: Demonstrate both Factory Method and Abstract Factory patterns working together.
+         *
+         * This file should showcase:
+         * 1. Creating different character types using Factory Method pattern
+         * 2. Equipping characters with themed equipment using Abstract Factory pattern
+         * 3. Displaying character stats and equipment details
+         *
+         * Expected output flow:
+         * - Create 3+ different characters
+         * - Equip each with different themed equipment sets
+         * - Show that the system is extensible and maintainable
+         */
 
         // TODO: Demonstrate Factory Method Pattern
         // Create different character types (Warrior, Mage, Archer, etc.)
