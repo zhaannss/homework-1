@@ -32,6 +32,20 @@ public class Main {
         mage.displayEquipment();
         System.out.println("\n-----------------------------\n");
 
+        CharacterFactory healerFactory = new HealerFactory();
+        Character healer = healerFactory.createCharacter("Hanna", "Witch", 35, "Female");
+        EquipmentFactory holyFactory = new HolyEquipmentFactory();
+        healer.equipWeapon(holyFactory.createWeapon());
+        healer.equipArmor(holyFactory.createArmor());
+        System.out.println("Creating Healer...");
+        healer.displayStats();
+        healer.useSpecialAbility();
+        healer.displayEquipment();
+        System.out.println("\n-----------------------------\n");
+
+
+
+
         /**
          * Main demonstration class for the RPG Character & Equipment System.
          *
